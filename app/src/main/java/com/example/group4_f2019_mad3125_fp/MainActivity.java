@@ -24,5 +24,5 @@ public class MainActivity extends  AppCompatActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         edtUsername=findViewById(R.id.edt_UserName);
-       
-}
+        edtPassword=findViewById(R.id.edt_Password);
+      }
