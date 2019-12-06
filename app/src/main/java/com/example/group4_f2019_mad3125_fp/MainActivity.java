@@ -26,4 +26,6 @@ public class MainActivity extends  AppCompatActivity  {
         edtUsername=findViewById(R.id.edt_UserName);
         edtPassword=findViewById(R.id.edt_Password);
         btnLogin=findViewById(R.id.btn_Login);
-       
+        btnLogin.setOnClickListener(new View.OnClickListener() {
+            
+}
