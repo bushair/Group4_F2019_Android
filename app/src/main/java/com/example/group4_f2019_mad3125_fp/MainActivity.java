@@ -35,17 +35,16 @@ public class MainActivity extends  AppCompatActivity  {
                     startActivity(nintent);
                 }
                 else{
-                
+                    btnLogin.setAlpha(.5f);
+                    edtUsername.setError("Please enter valid email or password");
+                    showAlert();
+
+                }
+
+            }
         });
 
     }  public void showAlert()
     {
-        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
-        alertDialogBuilder.setTitle("Login error");
-
-
-       // alertDialogBuilder.setNegativeButtonIcon(getResources().getDrawable(R.drawable.ic_launcher_foreground));
-        AlertDialog mAlertDialog=alertDialogBuilder.create();
-        mAlertDialog.show();
     }
 }
