@@ -27,5 +27,12 @@ public class MainActivity extends  AppCompatActivity  {
         edtPassword=findViewById(R.id.edt_Password);
         btnLogin=findViewById(R.id.btn_Login);
         btnLogin.setOnClickListener(new View.OnClickListener() {
-            
+            @Override
+            public void onClick(View v) {
+
+                if (edtUsername.getText().toString().trim().equals("user@employee.com") && edtPassword.getText().toString().trim().equals("s3cr3t")){
+                    Intent nintent=new Intent(MainActivity.this,ThirdActivity.class);
+                    startActivity(nintent);
+                }
+          
 }
