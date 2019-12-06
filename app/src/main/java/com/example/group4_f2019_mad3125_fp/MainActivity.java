@@ -25,4 +25,5 @@ public class MainActivity extends  AppCompatActivity  {
         setContentView(R.layout.activity_main);
         edtUsername=findViewById(R.id.edt_UserName);
         edtPassword=findViewById(R.id.edt_Password);
-      }
+        btnLogin=findViewById(R.id.btn_Login);
+       
