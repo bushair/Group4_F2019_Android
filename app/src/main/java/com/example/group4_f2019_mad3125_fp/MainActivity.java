@@ -34,5 +34,18 @@ public class MainActivity extends  AppCompatActivity  {
                     Intent nintent=new Intent(MainActivity.this,ThirdActivity.class);
                     startActivity(nintent);
                 }
-          
+                else{
+                
+        });
+
+    }  public void showAlert()
+    {
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
+        alertDialogBuilder.setTitle("Login error");
+
+
+       // alertDialogBuilder.setNegativeButtonIcon(getResources().getDrawable(R.drawable.ic_launcher_foreground));
+        AlertDialog mAlertDialog=alertDialogBuilder.create();
+        mAlertDialog.show();
+    }
 }
